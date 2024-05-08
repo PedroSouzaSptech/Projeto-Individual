@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://opresenterural.com.br/wp-content/uploads/2021/06/VACCINAR-FOTO-GALINHA-POEDEIRA-VACCINAR-DIVULGA%C3%87%C3%83O-2021-e1623170813779.jpg);
+    background-image: url('https://cevisa.org.br/spa/wp-content/uploads/2021/02/atleta.jpeg');
     background-position: center;
     background-size: cover;
       display: flex;
@@ -18,7 +18,7 @@ body {
       align-items: center;
       justify-content: space-evenly;
       border-radius: 20px;
-      box-shadow: 0 0 10px #b41d1d;
+      box-shadow: 0 0 10px #1AC474;
       padding: 20px;
       margin-top: 50px;
       margin-left: auto;
@@ -33,7 +33,7 @@ body {
       width: 244px;
       height: 40px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      background: #b41d1d;
+      background: #280ECC;
       color: #fff;
       outline: none;
       border: none;
@@ -47,18 +47,18 @@ body {
   }
 
   button:hover {
-      background-color: #8c1414;
+      background-color: #280ECC;
   }
   
   .titulo {
-      color: white;
+      color: #1AC474;
       text-align: center;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       margin-bottom: 10px;
   }
   
   .titulo2 {
-      color: white;
+      color: #1AC474;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin-bottom: 5px;
       left: 0;
@@ -81,7 +81,7 @@ body {
       margin-top: 10px;
   }
   .nav-container  .nav-link {
-    color:  #f8c71d; 
+    color:  #280ECC; 
     font-weight: bold;
     text-decoration: none; 
     padding: 20px 20px;
@@ -106,7 +106,7 @@ body {
     top: 40px;
     left: 100px;
     margin-top: 0px;
-    color: #f8c71d;
+    color: #280ECC;
     text-decoration: none; 
     font-weight: 600;
 }
