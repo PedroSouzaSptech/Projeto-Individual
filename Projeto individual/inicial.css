@@ -140,8 +140,10 @@ header{
 .quem_somos h1 {
     text-align: left;
     width: 100%;
+    /* color: #280ECC; */
 }
 .card_somos {
+    /* color: #280ECC; */
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -185,10 +187,10 @@ header{
 .quem_somos_card h4{
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #000;
+    color: #280ECC  ;
 }
 .quem_somos_card h4{
-    color: #000;
+    color: #280ECC;
 }
 .quem_somos_card_comp {
     text-align: right;
@@ -200,7 +202,7 @@ header{
     height: 150px;
 }
 .quem_somos_card_comp h4 {
-    color:white;
+    color:#280ECC;
 
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -211,7 +213,7 @@ header{
 
 .quem_somos_card h4 {
     text-align: left;
-    color: white;
+    color: #280ECC;
 }
 
 .nossos_servicos{
@@ -241,14 +243,14 @@ header{
     
 }
 
-/* .sobre_aviarios{
+.sobre_aviarios{
     padding: 20px;
     display: flex;
     background-color: #fff;
     color: black;
     height: auto;
     text-align: left;
-} */
+}
 
 .titulo_somos{
     height: 50%;
