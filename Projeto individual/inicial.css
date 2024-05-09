@@ -150,24 +150,24 @@ header{
     margin: auto;
 }
 
-.sobre_aviarios_card{
+.sobre_projeto_card{
     width: 70%;
     text-align: left;
     font-size: 20px;
 }
 
-.sobre_aviarios_card h4{
+.sobre_projeto_card h4{
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #000;
 }
 
-.sobre_aviarios_card p{
+.sobre_projeto_card p{
     font-size: 25px;
     color: #000;
 }
 
-.sobre_aviarios h1{
+.sobre_projeto h1{
     font-size: 45px;
     color: #000;
 }
