@@ -1,0 +1,286 @@
+  /* Paleta de cores: 
+  vermelho: #b41d1d
+  Laranja: #e85817
+  Amarelo: #f8c71d
+  Azul: #025360
+  Preto: #000000 */
+
+  @import url('https://media.gazetadopovo.com.br/2020/08/31122938/1084-960x540.jpg');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100px;
+}
+
+
+
+header{
+    width: 100%;
+    height: 120px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    
+}
+.logo {
+    display: flex;
+    justify-content: baseline;
+    width: 150px; 
+    height: auto;
+}
+.menu{
+    display: flex;
+    gap: 100px;
+    margin-right: 30px;
+
+}
+.menu a{
+    text-decoration: none;
+    display: flex;
+    color: #280ECC ;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+.banner{
+    background-image: url('https://abreucardiologia.com.br/wp-content/uploads/2019/08/jogging-2343558_1920.jpg');
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-color: #025360;
+    
+}
+.banner h1{
+    color: White;
+    margin-left: 100px;
+    padding-top: 300px;
+    font-size: 100px;
+}
+.banner h2{
+    color: #000;
+    margin-left: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    border: #5e5ea8;
+    text-align: center;
+    display: none;
+
+
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 800px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #4499ee;
+}
+
+.social{
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+.social .container .card{
+    width: 400px;
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 420px;
+    justify-content: space-around;
+}
+.social .container .card img{
+    width: 150px;
+}
+.social .container .card h4{
+    font-size: 24px;
+}
+
+
+
+.quem_somos{
+    padding: 20px;
+    display: flex;
+    background-color: #fff;
+    color: black;
+    height: 400px;
+    justify-content:space-around ;
+    flex-direction: column;
+    align-items: center;
+}
+.quem_somos h1 {
+    text-align: left;
+    width: 100%;
+    /* color: #280ECC; */
+}
+.card_somos {
+    /* color: #280ECC; */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.sobre_projeto_card{
+    width: 70%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.sobre_projeto_card h4{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000;
+}
+
+.sobre_projeto_card p{
+    font-size: 25px;
+    color: #000;
+}
+
+.sobre_projeto h1{
+    font-size: 45px;
+    color: #000;
+}
+
+.quem_somos_card {
+    width: 70%;
+    text-align: left;
+    color: white    ;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 10px;
+    height: 150px;
+}
+
+.quem_somos_card h4{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #280ECC  ;
+}
+.quem_somos_card h4{
+    color: #280ECC;
+}
+.quem_somos_card_comp {
+    text-align: right;
+    font-size: 20px;
+    width: 70%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 150px;
+}
+.quem_somos_card_comp h4 {
+    color:#280ECC;
+
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.quem_somos_card_comp p {
+    text-align: left;
+}
+
+.quem_somos_card h4 {
+    text-align: left;
+    color: #280ECC;
+}
+
+.nossos_servicos{
+    padding: 20px;
+    display: flex;
+    background-color: white;
+    color: #000;
+    height: auto;
+}
+.card_servicos{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: #5e5ea8;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 10px  #1AC474;
+    
+}
+
+.sobre_aviarios{
+    padding: 20px;
+    display: flex;
+    background-color: #fff;
+    color: black;
+    height: auto;
+    text-align: left;
+}
+
+.titulo_somos{
+    height: 50%;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: end;
+    align-items: end;
+    flex-direction: row-reverse;
+}
+
+footer{
+    height: 200px;
+    background-color:  #280ECC;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.loc a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.devs a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+.github{
+    width: 100px;
+}
