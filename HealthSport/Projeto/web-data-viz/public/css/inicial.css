@@ -1,22 +1,21 @@
-
-
-html{
+html {
     scroll-behavior: smooth;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
+body {
     height: 100px;
 }
 
 
 
-header{
+header {
     width: 100%;
     height: 120px;
     background-color: #000;
@@ -25,30 +24,33 @@ header{
     justify-content: space-between;
     position: fixed;
 
-    
+
 }
+
 .logo {
     display: flex;
     justify-content: baseline;
-    width: 150px; 
+    width: 150px;
     height: auto;
 }
-.menu{
+
+.menu {
     display: flex;
     gap: 100px;
     margin-right: 30px;
 
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     display: flex;
-    color: red ;
+    color: red;
     font-size: 20px;
     font-family: "Josefin Sans", sans-serif;
 }
 
 
-.banner{
+.banner {
     background-image: url('https://tntsports.com.br/__export/1698342076500/sites/esporteinterativo/img/2023/10/26/lucas-moura-gazeta-press-foto-1955831.jpg_2066882770.jpg');
     width: 100%;
 
@@ -59,24 +61,27 @@ header{
     background-repeat: no-repeat;
     text-align: center;
     border-color: #025360;
-    
+
 }
-.banner h1{
+
+.banner h1 {
     color: White;
     margin-left: 100px;
     padding-top: 300px;
     font-size: 100px;
 }
-.banner h2{
+
+.banner h2 {
     color: #000;
     margin-left: 100px;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-around;
 }
-.card{
+
+.card {
     margin-top: 20px;
     padding: 10px;
     border-radius: 5px;
@@ -96,7 +101,7 @@ header{
     box-shadow: 0 0 10px #4499ee;
 }
 
-.social{
+.social {
     height: auto;
     background-color: #fff;
     padding: 20px;
@@ -104,7 +109,7 @@ header{
 
 }
 
-.social .container .card{
+.social .container .card {
     width: 400px;
     color: #fff;
     display: flex;
@@ -115,31 +120,35 @@ header{
     height: 420px;
     justify-content: space-around;
 }
-.social .container .card img{
+
+.social .container .card img {
     width: 150px;
 }
-.social .container .card h4{
+
+.social .container .card h4 {
     font-size: 24px;
 }
 
 
 
-.quem_somos{
+.quem_somos {
     padding: 20px;
     display: flex;
     background-color: #fff;
     color: black;
     height: 400px;
-    justify-content:space-around ;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
+
 .quem_somos h1 {
 
     text-align: left;
     width: 100%;
     /* color: #280ECC; */
 }
+
 .card_somos {
     /* color: #280ECC; */
     width: 90%;
@@ -150,24 +159,24 @@ header{
     margin: auto;
 }
 
-.sobre_projeto_card{
+.sobre_projeto_card {
     width: 70%;
     text-align: left;
     font-size: 20px;
 }
 
-.sobre_projeto_card h4{
+.sobre_projeto_card h4 {
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #000;
 }
 
-.sobre_projeto_card p{
+.sobre_projeto_card p {
     font-size: 25px;
     color: #000;
 }
 
-.sobre_projeto h1{
+.sobre_projeto h1 {
     font-size: 45px;
     color: #000;
 }
@@ -176,22 +185,24 @@ header{
     width: 1200px;
     padding: 20px;
     text-align: center;
-    color: white    ;
+    color: white;
     font-size: 20px;
     background-color: black;
     border-radius: 10px;
     height: 200px;
 }
 
-.quem_somos_card h4{
-    
+.quem_somos_card h4 {
+
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #280ECC  ;
-}
-.quem_somos_card h4{
     color: red;
 }
+
+.quem_somos_card h4 {
+    color: red;
+}
+
 .quem_somos_card_comp {
     text-align: right;
     padding: 20px;
@@ -202,29 +213,33 @@ header{
     border-radius: 10px;
     height: 200px;
 }
+
 .quem_somos_card_comp h4 {
-    color:red;
+    color: red;
+    text-align: center;
 
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .quem_somos_card_comp p {
     text-align: left;
 }
 
 .quem_somos_card h4 {
-    text-align: left;
+    text-align: center;
     color: red;
 }
 
-.nossos_servicos{
+.nossos_servicos {
     padding: 20px;
     display: flex;
     background-color: white;
     color: #000;
     height: auto;
 }
-.card_servicos{
+
+.card_servicos {
     margin-top: 20px;
     padding: 20px;
     border-radius: 5px;
@@ -240,49 +255,51 @@ header{
     align-items: center;
     justify-content: space-between;
     border-radius: 20px;
-    box-shadow: 0 0 10px  #1AC474;
-    
-}
-.card_servicos1{
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: black;
-    border: #5e5ea8;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 500px;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 20px;
-    box-shadow: 0 0 10px  #1AC474;
-    
-}
-.card_servicos2{
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: black;
-    border: #5e5ea8;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 500px;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 20px;
-    box-shadow: 0 0 10px  #1AC474;
-    
+    box-shadow: 0 0 10px #1AC474;
+
 }
 
-.sobre_aviarios{
+.card_servicos1 {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: #5e5ea8;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #1AC474;
+
+}
+
+.card_servicos2 {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: #5e5ea8;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #1AC474;
+
+}
+
+.sobre_aviarios {
     padding: 20px;
     display: flex;
     background-color: #fff;
@@ -291,54 +308,57 @@ header{
     text-align: left;
 }
 
-.titulo_somos{
+.titulo_somos {
     /* font-size: 40px;
      border: 2px solid black;
       padding: 10px; */
-       text-align: center;
-       height: 50%;
-       font-size: 25px;
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       justify-content: end;
-       align-items: end;
-       flex-direction: row-reverse;
+    text-align: center;
+    height: 50%;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: end;
+    align-items: end;
+    flex-direction: row-reverse;
 }
 
-footer{
+footer {
     height: 100px;
-    background-color:  #AB0505;
+    background-color: #AB0505;
     display: flex;
     color: white;
     justify-content: space-around;
     align-items: center;
 }
 
-.loc a{
+.loc a {
     text-decoration: none;
     color: white;
     font-size: 25px;
 }
-.devs a{
+
+.devs a {
     text-decoration: none;
     color: white;
     font-size: 18px;
 
 }
-.github{
+
+.github {
     width: 100px;
 }
-.onu1{
+
+.onu1 {
     /* font-size: 40px;
      border: 2px solid black;
       padding: 10px; */
-      display: flex;
-       text-align: center;
-       height: 50%;
-       font-size: 25px;
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
+    display: flex;
+    text-align: center;
+    height: 50%;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .onu {
@@ -348,6 +368,7 @@ footer{
     flex-direction: row;
 
 }
+
 /* height: 50%;
 font-size: 50px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

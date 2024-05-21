@@ -13,15 +13,17 @@
     <header class="header">
         <div class="logo">
             <a href="index.html">
-                <img src="assets/imgs/Imagens/logo(fundo vermelho).png" alt="logo da empresa" style="width: 150px; margin-top: -20px; margin-left: -15px;" >
+                <img src="assets/imgs/Imagens/logo(fundo vermelho).png" alt="logo da empresa"
+                    style="width: 150px; margin-top: -20px; margin-left: -15px;">
             </a>
         </div>
 
-        <div class="nome-empresa"> <a href="index.html" class="aEmpresa" style="margin-left:50px; color: red;">HealthSport</a>
+        <div class="nome-empresa"> <a href="index.html" class="aEmpresa"
+                style="margin-left:50px; color: red;">HealthSport</a>
 
 
         </div>
-     
+
 
     </header>
     <div class="container">
@@ -37,7 +39,9 @@
             <button onclick="entrar()"> <b>Acessar</b></button>
             <button onclick="cancelar()"><b>Cancelar</b></button><br>
         </div>
-        <p style="color: white;"><a href="cadastro.html" style="color: black;"> <b>Ainda não possui seu cadastro? Se inscreva aqui</b> <link rel="stylesheet" href="cadastro.html"></a></p>
+        <p style="color: white;"><a href="cadastro.html" style="color: black;"> <b>Ainda não possui seu cadastro? Cadastre-se aqui</b>
+                <link rel="stylesheet" href="cadastro.html">
+            </a></p>
     </div>
 
 </body>
@@ -55,7 +59,7 @@
 
         if (emailVar == "" || senhaVar == "") {
             // cardErro.style.display = "block".
-          alert ('Mensagem de erro para todos os campos em branco');
+            alert('Mensagem de erro para todos os campos em branco');
             finalizarAguardar();
             return false;
         }
@@ -86,11 +90,11 @@
                     console.log(JSON.stringify(json));
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.NomeCompleto;
-                    sessionStorage.ID_USUARIO = json.id; 
-                    
+                    sessionStorage.ID_USUARIO = json.id;
+
 
                     setTimeout(function () {
-                    alert('Login efetuado com sucesso')
+                        alert('Login efetuado com sucesso')
                         window.location = "./dashboard/dashboard.html";
                     }, 1000); // apenas para exibir o loading
 
