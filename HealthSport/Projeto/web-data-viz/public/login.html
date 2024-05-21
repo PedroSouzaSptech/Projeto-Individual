@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HealthSport | Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="assets/imgs/Imagens/logo.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/imgs/Imagens/logo.png" alt="logo da empresa">
+            </a>
+        </div>
+
+        <div class="nome-empresa"> <a href="index.html" class="aEmpresa">HealthSport</a>
+
+        </div>
+
+        <div class="nav-container">
+            <!-- <a href="simulador.html" target="_self" class="nav-link">Simulador</a> -->
+            <!-- <a href="cadastro.html" target="_self" class="nav-link">Cadastre-se</a> -->
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="titulo">Login</h1>
+        <h2 class="titulo2">Nome</h2>
+        <input id="input_nome" class="digitar" type="text" placeholder="Digite o seu nome...">
+        <h2 class="titulo2">Email</h2>
+        <input id="input_email" class="digitar" type="email" placeholder="Digite o seu email...">
+        <h2 class="titulo2">Senha</h2>
+        <input id="input_senha" class="digitar" type="password" placeholder="Digite a sua senha...">
+        <br>
+        <div class="botoes-container">
+            <button onclick="entrar()"> <b>Acessar</b></button>
+            <button onclick="cancelar()"><b>Cancelar</b></button><br>
+        </div>
+        <p style="color: white;"><a href="cadastro.html" style="color: #280ECC;"> <b>Ainda não possui seu cadastro? Se inscreva aqui</b> <link rel="stylesheet" href="cadastro.html"></a></p>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+
+    function entrar() {
+        // aguardar();
+
+        var emailVar = input_email.value;
+        var senhaVar = input_senha.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            // cardErro.style.display = "block".
+          alert ('Mensagem de erro para todos os campos em branco');
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.NomeCompleto;
+                    sessionStorage.ID_USUARIO = json.id;
+                    
+
+                    setTimeout(function () {
+                    alert('Login efetuado com sucesso')
+                        window.location = "./dashboard/cards.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    // finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        // cardErro.style.display = "none"
+    }
+
+</script>
