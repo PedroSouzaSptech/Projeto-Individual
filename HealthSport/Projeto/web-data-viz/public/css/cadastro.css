@@ -19,12 +19,13 @@ body {
   font-size: 20px;
 }
 
-.input-container {
+.input-container input{
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 300px;
+  max-height: 350px;
   overflow-y: auto;
+  padding: 10px 12px;
 }
 
 .input-container::-webkit-scrollbar {
