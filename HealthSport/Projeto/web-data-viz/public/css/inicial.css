@@ -23,7 +23,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-
+    top: 0;
 
 }
 
@@ -51,7 +51,7 @@ header {
 
 
 .banner {
-    background-image: url('https://tntsports.com.br/__export/1698342076500/sites/esporteinterativo/img/2023/10/26/lucas-moura-gazeta-press-foto-1955831.jpg_2066882770.jpg');
+    background-image: url('../assets/imgs/Imagens/foto\ de\ fundo2.png');
     width: 100%;
 
     height: 700px;
@@ -369,9 +369,3 @@ footer {
 
 }
 
-/* height: 50%;
-font-size: 50px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-justify-content: end;
-align-items: end;
-flex-direction: row-reverse; */
