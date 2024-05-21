@@ -13,18 +13,16 @@
     <header class="header">
         <div class="logo">
             <a href="index.html">
-                <img src="assets/imgs/Imagens/logo.png" alt="logo da empresa">
+                <img src="assets/imgs/Imagens/logo(fundo vermelho).png" alt="logo da empresa" style="width: 150px; margin-top: -20px; margin-left: -15px;" >
             </a>
         </div>
 
-        <div class="nome-empresa"> <a href="index.html" class="aEmpresa">HealthSport</a>
+        <div class="nome-empresa"> <a href="index.html" class="aEmpresa" style="margin-left:50px; color: red;">HealthSport</a>
+
 
         </div>
+     
 
-        <div class="nav-container">
-            <!-- <a href="simulador.html" target="_self" class="nav-link">Simulador</a> -->
-            <!-- <a href="cadastro.html" target="_self" class="nav-link">Cadastre-se</a> -->
-        </div>
     </header>
     <div class="container">
         <h1 class="titulo">Login</h1>
@@ -39,7 +37,7 @@
             <button onclick="entrar()"> <b>Acessar</b></button>
             <button onclick="cancelar()"><b>Cancelar</b></button><br>
         </div>
-        <p style="color: white;"><a href="cadastro.html" style="color: #280ECC;"> <b>Ainda não possui seu cadastro? Se inscreva aqui</b> <link rel="stylesheet" href="cadastro.html"></a></p>
+        <p style="color: white;"><a href="cadastro.html" style="color: black;"> <b>Ainda não possui seu cadastro? Se inscreva aqui</b> <link rel="stylesheet" href="cadastro.html"></a></p>
     </div>
 
 </body>
@@ -93,7 +91,7 @@
 
                     setTimeout(function () {
                     alert('Login efetuado com sucesso')
-                        window.location = "./dashboard/cards.html";
+                        window.location = "./dashboard/dashboard.html";
                     }, 1000); // apenas para exibir o loading
 
                 });

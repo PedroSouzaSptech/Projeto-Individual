@@ -18,7 +18,7 @@ body {
       align-items: center;
       justify-content: space-evenly;
       border-radius: 20px;
-      box-shadow: 0 0 10px #280ECC;
+      box-shadow: 0 0 10px red;
       padding: 20px;
       margin-top: 50px;
       margin-left: auto;
@@ -33,7 +33,7 @@ body {
       width: 244px;
       height: 40px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      background: #280ECC;
+      background: red;
       color: #fff;
       outline: none;
       border: none;
@@ -47,18 +47,18 @@ body {
   }
 
   button:hover {
-      background-color: #280ECC;
+      background-color: RED;
   }
   
   .titulo {
-      color: #280ECC;
+      color: red;
       text-align: center;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       margin-bottom: 10px;
   }
   
   .titulo2 {
-      color: #280ECC;
+      color: red;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin-bottom: 5px;
       left: 0;
@@ -81,7 +81,7 @@ body {
       margin-top: 10px;
   }
   .nav-container  .nav-link {
-    color:  #280ECC; 
+    color:  black; 
     font-weight: bold;
     text-decoration: none; 
     padding: 20px 20px;
@@ -112,5 +112,5 @@ body {
 }
 .nav-link:hover{
     transition: 0.4s;
-    color: #ffff;
+    color: black;
 }
