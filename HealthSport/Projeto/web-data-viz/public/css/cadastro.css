@@ -21,11 +21,12 @@ body {
 
 .input-container input{
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   max-height: 350px;
   overflow-y: auto;
-  padding: 10px 12px;
+  padding: 03px 05px;
 }
 
 .input-container::-webkit-scrollbar {
