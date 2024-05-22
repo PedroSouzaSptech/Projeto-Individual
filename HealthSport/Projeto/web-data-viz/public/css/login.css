@@ -2,115 +2,154 @@ body {
     background-image: url('https://w0.peakpx.com/wallpaper/320/805/HD-wallpaper-estadio-do-morumbi-sunset-empty-sradium-soccer-morumbi-sao-paulo-stadium-brazil-brazilian-stadiums.jpg');
     background-position: center;
     background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-  }
-  .container {
-      display: flex;
-      flex-direction: column;
-      background: rgba(250, 248, 248, 0.8);
-      width: 600px;
-      height: 500px;
-      align-items: center;
-      justify-content: space-evenly;
-      border-radius: 20px;
-      box-shadow: 0 0 10px red;
-      padding: 20px;
-      margin-top: 50px;
-      margin-left: auto;
-      margin-right: auto;
-  } 
-
-  *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;;
-}
-
-  button{
-      width: 244px;
-      height: 40px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      background: red;
-      color: #fff;
-      outline: none;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      margin-top: 10px;
-      transition: background-color 0.3s ease;
-      margin-right: 5px;
-      margin-left: 10px;
-      margin-bottom: 20px;
-  }
-
-  button:hover {
-      background-color: RED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
   }
   
-  .titulo {
-      color: red;
-      text-align: center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin-bottom: 10px;
+  * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  .titulo2 {
-      color: red;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin-bottom: 5px;
-      left: 0;
+  .card_erro #mensagem_erro {
+    font-weight: 500;
+    font-size: 20px; 
+  }
+  
+  .input-container input {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    max-height: 300px; 
+    overflow-y: auto;
+    padding: 3px 5px;
+  }
+  
+  .input-container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px; 
   }
   
   .digitar {
-      color: #000;
-      text-align: center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      height: 30px;
-      width: 500px;
-      margin-bottom: 10px;
-      border-radius: 5px;
+    color: #000;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 30px;
+    width: 500px; 
+    margin-bottom: 10px;
+    border-radius: 15px; 
+  }
+  
+  .input-data {
+    color: #000;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 20px; 
+    width: 500px; 
+    margin-bottom: 10px;
+    border-radius: 15px; 
+  }
+  
+  .titulo-data {
+    text-align: center;
+    color: #280ECC;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(250, 248, 248, 0.8);
+    width: 600px; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; 
+    box-shadow: 0 0 10px red; 
+    padding: 20px;
+    margin-top: 50px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button {
+    width: 244px;
+    height: 40px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: red;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    margin-top: 10px; 
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  button:hover {
+    background-color: red;
+  }
+  
+  .titulo {
+    color: red;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px; 
+  }
+  
+  .titulo2 {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px; 
+    left: 0;
   }
   
   .nav-container {
-      position: absolute;
-      top: 30px;
-      right: 20px;
-      margin-top: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-top: 15px;
   }
-  .nav-container  .nav-link {
-    color:  black; 
+  
+  .nav-container .nav-link {
+    color: red; 
     font-weight: bold;
     text-decoration: none; 
-    padding: 20px 20px;
+    margin-top: 50px; 
+    margin-right: 50px; 
+    padding: 15px 25px; 
     font-size: 25px;
-}
-
+  }
+  
   .logo {
     position: absolute;
-    top: 20px; 
-    left: 20px; 
-}
-
-.logo img {
+    top: 10px; 
+    left: 10px; 
+  }
+  
+  .logo img {
     width: 80px;
     height: auto; 
-}
-
-.nome-empresa .aEmpresa{
-    font-size: 40px;
-    margin-left: 20px;
+  }
+  
+  .nome-empresa {
+    font-size: 40px; 
+    margin-left: 20px; 
     position: absolute;
-    top: 40px;
-    left: 100px;
+    top: 20px;
+    left: 100px; 
     margin-top: 0px;
-    color: #280ECC;
-    text-decoration: none; 
+    color: red;
     font-weight: 600;
-}
-.nav-link:hover{
+  }
+  
+  .nav-link:hover {
     transition: 0.4s;
-    color: black;
-}
+    color: #fff;
+  }
+  
