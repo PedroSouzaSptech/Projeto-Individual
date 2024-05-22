@@ -321,14 +321,6 @@ header {
     flex-direction: row-reverse;
 }
 
-footer {
-    height: 100px;
-    background-color: #AB0505;
-    display: flex;
-    color: white;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .loc a {
     text-decoration: none;
@@ -367,5 +359,58 @@ footer {
     align-items: center;
     flex-direction: row;
 
+}
+.quem_sou {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: space-around; /* Centraliza os cards horizontalmente */
+}
+
+.card_sou {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: red solid 1px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0 0 10px red;
+}
+
+.titulo_sou {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: red;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ajuste a largura para 100% do card */
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0 0 10px red;
+}
+
+
+footer {
+    height: 100px;
+    background-color: #AB0505;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
 }
 
