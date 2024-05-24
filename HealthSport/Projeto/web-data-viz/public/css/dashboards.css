@@ -321,8 +321,10 @@ body {
 }
 
 canvas {
-  width: 100% !important;
-  height: 100% !important;
+  width: 50% ;
+  height: 50% ;
+  margin-left: 5%;
+  margin-top: 10%;
 }
 
 /* PAGINA DOS GRÁFICOS 2023 */
