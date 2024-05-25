@@ -153,3 +153,6 @@ body {
     color: #fff;
   }
   
+  .circulo {
+    display: none;
+  }

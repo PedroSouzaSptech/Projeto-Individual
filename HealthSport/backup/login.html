@@ -1,83 +1,89 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> HealthSport | Login</title>
-    <link rel="stylesheet" href="LOGIN.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="logo">
-            <a href="inicial.html">
-                <img src="Imagens/logo.png" alt="logo da empresa">
-            </a>
-        </div>
-
-        <div class="nome-empresa"> <a href="inicial.html" class="aEmpresa">HealthSport</a>
-
-        </div>
-
-        <div class="nav-container">
-            <a href="simulador.html" target="_self" class="nav-link">Simulador</a>
-            <a href="cadastro.html" target="_self" class="nav-link">Cadastre-se</a>
-        </div>
-    </header>
-    <div class="container">
-        <h1 class="titulo">Login</h1>
-        <h2 class="titulo2">Nome</h2>
-        <input id="input_nome" class="digitar" type="text" placeholder="Digite o seu nome...">
-        <h2 class="titulo2">Email</h2>
-        <input id="input_email" class="digitar" type="email" placeholder="Digite o seu email...">
-        <h2 class="titulo2">Senha</h2>
-        <input id="input_senha" class="digitar" type="password" placeholder="Digite a sua senha...">
-        <br>
-        <div class="botoes-container">
-            <button onclick="Entrar()">Acessar</button>
-            <button onclick="cancelar()">Cancelar</button>
-        </div>
-    </div>
-
-</body>
-
-</html>
-
 <script>
+    function aguardar() {
+document.getElementById("aguardar").style.display = "block";
+}
+
+function finalizarAguardar() {
+document.getElementById("aguardar").style.display = "none";
+}
+
+
+    function entrar() {
+        aguardar();
+
+        var emailVar = input_email.value;
+        var senhaVar = input_senha.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            cardErro.style.display = "block".
+            // alert('Mensagem de erro para todos os campos em branco');
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome; 
+                    sessionStorage.ID_USUARIO = json.id;
+
+
+                    setTimeout(function () {
+                        // alert('Login efetuado com sucesso')
+                        window.location = "./dashboard/dashboard.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
+
     function cancelar() {
-        input_email.value = "";
-        input_senha.value = "";
-        input_nome.value = "";
-    }
 
-    function Entrar() {
-        var url = "usuario.html";
+    document.getElementById("input_email").value = "";
+    document.getElementById("input_senha").value = "";
 
-        var nome = input_nome.value
-        var email = input_email.value
-        var senha = input_senha.value
-
-        var emailVal = email.indexOf("@", ".");
-
-        if (nome.length <= 1) {
-            alert("Nome inválido. Por favor, insira um nome válido.");
-        }
-        if (emailVal < 0) {
-            alert("Email inválido. Por favor, insira um email válido.");
-        }
-        if (senha != 'Sprint2') {
-            alert('Senha incorreta')
-        }
-
-        if (nome == 'Fernando Brandão' && email == 'fernando@sptech.school' && senha == 'Sprint2') {
-            alert ('Login efetuado com sucesso')
-            window.open(url, "_self")
-        }else {
-            alert ('Informações incorretas')
-        } if (nome == '' || email == '' || senha == '') {
-            alert ('Espaços em branco')
-        } 
+        
+}
     
-    }
 </script>
