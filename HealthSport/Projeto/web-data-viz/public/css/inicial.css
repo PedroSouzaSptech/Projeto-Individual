@@ -60,7 +60,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    border-color: #025360;
+    border-color: red;
 
 }
 
@@ -98,7 +98,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
-    box-shadow: 0 0 10px #4499ee;
+    box-shadow: 0 0 10px red;
 }
 
 .social {
@@ -255,7 +255,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-radius: 20px;
-    box-shadow: 0 0 10px #1AC474;
+    box-shadow: 0 0 10px red;
 
 }
 
@@ -275,7 +275,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-radius: 20px;
-    box-shadow: 0 0 10px #1AC474;
+    box-shadow: 0 0 10px red;
 
 }
 
@@ -295,7 +295,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-radius: 20px;
-    box-shadow: 0 0 10px #1AC474;
+    box-shadow: 0 0 10px red;
 
 }
 
@@ -364,7 +364,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Espaço entre os cards */
-    justify-content: space-around; /* Centraliza os cards horizontalmente */
+    justify-content: space-around;
 }
 
 .card_sou {
