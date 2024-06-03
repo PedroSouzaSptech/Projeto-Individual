@@ -97,6 +97,7 @@
       senhaVar == "" ||
       confirmacaoSenhaVar == ""
     ) {
+      alert('Não foi possivel realizar o seu cadasttro, pois há campos em branco')
       // mensagem_erro.innerHTML =
       //   "(Mensagem de erro para todos os campos em branco)";
 
@@ -136,10 +137,11 @@
           finalizarAguardar();
         } else {
           throw "Houve um erro ao tentar realizar o cadastro!";
-        }
+        } 
       })
       .catch(function (resposta) {
         console.log(`#ERRO: ${resposta}`);
+      
 
       });
 
