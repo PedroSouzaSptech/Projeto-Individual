@@ -2,7 +2,7 @@ var database = require("../database/config");
 
 function buscarUltimasMedidas() {
 
-    var instrucaoSql = `select nomeClube, count(nomeClube) as 'Votos' from usuario group by nomeClube; `;
+    var instrucaoSql = `select nomeClube, count(nomeClube) as 'Votos' from Usuario group by nomeClube; `;
 
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
