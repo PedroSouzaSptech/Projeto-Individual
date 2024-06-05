@@ -28,7 +28,7 @@
             </div>
             <div class="btn-nav-white">
                 <a href="./dashboard.html">
-                    <h3>Gráficos</h3>
+                    <h3>Clubes</h3>
                 </a>
             </div>
             <div class="btn-nav">
@@ -47,7 +47,7 @@
                     <div class="div-form">
                         <form id="form_postagem" method="post" onsubmit="return publicar()">
                             <label>
-                                Time:
+                                Clube:
                                 <br>
                                 <input name="titulo" id="titulo" maxlength="100" type="text">
                             </label>
@@ -61,7 +61,7 @@
                             <button>Enviar</button>
                         </form>
                     </div>
-                    <h1>Mural de Avisos</h1>
+                    <h1>Recados</h1>
                     <div class="div-results">
                         <div id="feed_container" class="feed-container"></div>
                     </div>
@@ -157,15 +157,15 @@
                     spanID.innerHTML = `ID: <b>${publicacao.idAviso}</b>`;
 
                     var spanTitulo = document.createElement("span");
-                    spanTitulo.innerHTML = `Título: <b>${publicacao.titulo}</b>`;
+                    spanTitulo.innerHTML = `Clube: <b>${publicacao.titulo}</b>`;
                     spanTitulo.className = "publicacao-titulo";
 
                     var spanNome = document.createElement("span");
-                    spanNome.innerHTML = `Autor: <b>${publicacao.nome}</b>`;
+                    spanNome.innerHTML = `Torcedor: <b>${publicacao.nome}</b>`;
                     spanNome.className = "publicacao-nome";
 
                     var divDescricao = document.createElement("div");
-                    divDescricao.innerHTML = `Descrição: <b>${publicacao.descricao}</b>`;
+                    divDescricao.innerHTML = `Recado: <b>${publicacao.descricao}</b>`;
                     divDescricao.className = "publicacao-descricao";
 
                     var divButtons = document.createElement("div");
