@@ -58,7 +58,7 @@
 
         if (emailVar == "" || senhaVar == "") {
             // cardErro.style.display = "block".
-            alert('Não foi possivel realizar o Login, há campos em branco');
+            alert('Não foi possível realizar o Login, há campos em branco');
             finalizarAguardar();
             return false;
         }
@@ -105,7 +105,7 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    alert('Não foi possivel realizar o login, verifique suas credenciais')
+                    alert('Não foi possível realizar o login, verifique suas credenciais')
                     // finalizarAguardar(texto);
                 });
             }
