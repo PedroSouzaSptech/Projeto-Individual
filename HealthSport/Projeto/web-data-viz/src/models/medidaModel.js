@@ -1,6 +1,6 @@
 var database = require("../database/config");
 
-function buscarUltimasMedidas() {
+function graficoTotal() {
 
     var instrucaoSql = `select nomeClube, count(nomeClube) as 'Votos' from Usuario group by nomeClube; `;
 
@@ -23,6 +23,6 @@ function buscarMedidasEmTempoReal(idAquario) {
 }
 
 module.exports = {
-    buscarUltimasMedidas,
+    graficoTotal,
     buscarMedidasEmTempoReal
 }

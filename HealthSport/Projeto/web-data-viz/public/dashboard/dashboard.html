@@ -26,6 +26,24 @@
     <script src="https://kit.fontawesome.com/9f7414eb10.js" crossorigin="anonymous"></script>
 </head>
 
+<style>
+    .direita{
+        display: flex;
+    }
+    .graficoTotal {
+        display: flex;
+        margin-top: 100px;
+        width: 50%;
+        height: 30%;
+    }
+
+    .tituloGraficoTotal {
+        display: flex;
+        justify-content: center;
+        color: antiquewhite;
+    }
+</style>
+
 <!-- <body onload=" atualizarFeed()"> -->
 
 <body>
@@ -59,13 +77,14 @@
         </div>
 
         <div class="dash">
-            <div id="alerta">
+            <div class="direita">
+                <div class="graficoTotal" id="graficoTotal">
+                    <div class="tituloGraficoTotal">
+                        <p>Total de clubes por torcedores cadastrados</p>
+                    </div>
+                    <canvas id="myChartCanvas"></canvas>
+                </div>
             </div>
-
-            <div class="btns-dash" id="btnAquario">
-                <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  -->
-            </div>
-            <canvas id="myChartCanvas" style="display: flex;width: 20%; height: 19%;"></canvas>
         </div>
     </div>
 
